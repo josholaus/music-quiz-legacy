@@ -32,6 +32,22 @@ body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content.fof {
+	text-align: center;
+}
+
+.content.fof a {
+	text-decoration: none;
+	color: #fff;
+	transition: .2s;
+}
+
+.content.fof a:hover {
+	opacity: .8;
 }
 
 .title {
