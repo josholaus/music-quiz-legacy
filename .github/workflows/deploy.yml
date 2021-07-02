@@ -21,4 +21,4 @@ jobs:
           docker build . -t docker.pkg.github.com/josholaus/music-quiz/app:latest
       - name: docker push
         run: |
-          docker push docker.pkg.github.com/bemoty/josholaus/music-quiz/app:latest
+          docker push docker.pkg.github.com/josholaus/music-quiz/app:latest
