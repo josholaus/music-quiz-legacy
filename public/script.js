@@ -1,5 +1,5 @@
-const storedTracks = []
-const currentSong = {}
+var storedTracks = []
+var currentSong = {}
 
 $(document).on('ready', () => {
 	$('#loggedIn').hide()
