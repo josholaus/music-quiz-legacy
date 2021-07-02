@@ -63,6 +63,7 @@ $(document).on('ready', () => {
 	var params = getHashParams()
 
 	var access_token = params.access_token,
+		refresh_token = params.refresh_token,
 		error = params.error
 
 	if (error) {
@@ -115,6 +116,18 @@ $(document).on('ready', () => {
 
 	$('#pause-playlist').click(() => {
 		pausePlayback()
+	})
+
+	$('#refresh-token').click(() => {
+		$.ajax({
+			url: '/refresh_token',
+			data: {
+				'refresh_token': refresh_token
+			}
+		}).done(function (data) {
+			access_token = data.access_token;
+			alert('Token refreshed');
+		});
 	})
 
 	var fastForwardValue = [15, 30]

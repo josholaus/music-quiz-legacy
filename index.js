@@ -20,6 +20,10 @@ app.get('/callback', (req, res) => {
 	spotifyApi.handleCallback(req, res)
 })
 
+app.get('/refresh_token', (req, res) => {
+	spotifyApi.handleRefresh(req, res)
+})
+
 app.get('*', (req, res) => {
 	res.status(400).sendFile(__dirname + '/public/404.html')
 })
