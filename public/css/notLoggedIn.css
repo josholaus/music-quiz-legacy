@@ -15,7 +15,7 @@ This file includes CSS for when no user is logged in, e.g. the login anchor and 
 }
 
 #login h3 {
-  color: white;
+	color: white;
 	font-family: 'Montserrat', sans-serif;
 }
 
