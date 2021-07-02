@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Josholaus Music Quiz</title>
+		<link rel="icon" type="image/jpeg" href="favicon.jpeg"/>
+
+		<!-- NoUiSlider core CSS -->
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.css">
+
+		<!-- NoUiSlider core JS -->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.js"></script>
+
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/loggedIn.css" />
+		<link rel="stylesheet" href="css/notLoggedIn.css" />
+	</head>
+
+	<body>
+		<!-- Title area -->
+		<div class="title">
+			<h1>SPOTIFY MUSIC QUIZ</h1>
+		</div>
+		<div class="subheading">
+			<h5>created by Josholaus</h5>
+		</div>
+
+		<!-- Login -->
+		<div id="login" class="content">
+       		<h3>Welcome to music quiz, please log in with Spotify to continue</h3>
+			<a href="https://spotify-music-quiz.stillrosi.repl.co/login">LOGIN WITH SPOTIFY</a>
+		</div>
+
+		<!-- Logged in -->
+		<div id="loggedIn" class="content">
+			<p class="now-playing">Now playing:<br/><br/><span id="track-info" class="nothing">Nothing</span></p>
+     		<p class="left-songs">Songs left: <span id="left-songs-number">0</span>
+			
+			<div id="fast-forward">
+				<h4 class="tooltip">Use the ranged slider to set the interval for the fast-forward value in seconds</h4>
+				<div id="dual-slider"></div>
+			</div>
+
+			<div id="songs-per-playlist">
+				<h4 class="tooltip">Set the amount of songs per playlist with the slider below</h4>
+				<div id="slider"></div>
+			</div>
+
+			<div id="playlist-input">
+				<h4 class="tooltip">Paste your playlist URLs below</h4>
+				<textarea id="playlist-values" rows="20" cols="80" placeholder="Playlist URLs"></textarea>
+			</div>
+
+			<a href="#" id="edit-playlists" class="media-control" title="Edit playlists">E</a>	
+			<a href="#" id="pause-playlist" class="media-control" title="or use SHIFT+K">⏸</a>
+			<a href="#" id="next-playlist" class="media-control" title="or use SHIFT+N">⏭</a>
+			<a href="#" id="submit-playlists" class="submit-data">SUBMIT</a>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

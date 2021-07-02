@@ -1,0 +1,155 @@
+/*
+This file contains CSS for general / global elements like the background, title area, different anchor styles and animations.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+	--primary: #0984e3;
+	--accent: #00b894;
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+
+	background-image: linear-gradient(
+			45deg,
+			transparent 85%,
+			var(--primary) 15%
+		),
+		linear-gradient(225deg, #2e2e2e 90%, var(--accent) 10%);
+	background-repeat: no-repeat;
+}
+
+.content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title {
+	word-wrap: none;
+	text-align: center;
+
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+
+	letter-spacing: 10px;
+	text-shadow: 7px -2px dimgray;
+}
+
+.title > * {
+	display: inline-block;
+}
+
+.subheading {
+	text-align: center;
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 25px;
+
+	animation: floating 3s ease-in-out infinite;
+}
+
+.subheading > * {
+	display: inline-block;
+	margin: 0;
+}
+
+.submit-data {
+	margin-top: 50px;
+	display: inline-block;
+
+	text-decoration: none;
+
+	outline: none;
+	transition-duration: 0.3s;
+
+	width: 300px;
+	padding: 10px;
+
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+
+	border: 2px solid var(--primary);
+	border-radius: 35px;
+}
+
+.submit-data:hover {
+	width: 340px;
+	background-color: var(--primary);
+}
+
+.submit-data:active {
+	width: 340px;
+	background-color: var(--accent);
+	border-color: var(--accent);
+}
+
+.media-control {
+	margin-top: 50px;
+	display: inline-block;
+
+	text-decoration: none;
+
+	outline: none;
+	transition-duration: 0.3s;
+
+	padding: 10px;
+	width: 35px;
+	height: 35px;
+
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+
+	border: 2px solid var(--primary);
+	border-radius: 35px;
+}
+
+.media-control:hover {
+	background-color: var(--primary);
+}
+
+.media-control:active {
+	border-color: var(--accent);
+	background-color: var(--accent);
+}
+
+.tooltip {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+/* Floating animation */
+.floating {
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+@keyframes floating {
+	0% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(0, 10px);
+	}
+	100% {
+		transform: translate(0, -0px);
+	}
+}

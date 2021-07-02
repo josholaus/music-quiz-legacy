@@ -1,0 +1,59 @@
+/*
+This file contains CSS for all elements that are displayed when a Spotify user is logged in.
+This includes the input area for playlist URLs as well as the media control anchors.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+	--primary: #0984e3;
+	--accent: #00b894;
+}
+
+#loggedIn {
+	text-align: center;
+}
+
+.now-playing,
+.left-songs {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+#track-info {
+	transition: 0.2s;
+	filter: blur(8px);
+	font-weight: bold;
+}
+
+#track-info:hover {
+	filter: none;
+}
+
+#playlist-values {
+	padding: 10px;
+	width: 100%;
+
+	outline: none;
+	border: 3px solid var(--primary);
+	border-radius: 5px;
+
+	background: dimgray;
+
+	transition-duration: 0.4s;
+}
+
+#playlist-values:focus {
+	border-color: var(--accent);
+}
+
+#fast-forward {
+	margin-top: 150px;
+}
+
+#dual-slider,
+#slider {
+	margin-top: 50px;
+}

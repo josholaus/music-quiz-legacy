@@ -1,0 +1,53 @@
+/*
+This file includes CSS for when no user is logged in, e.g. the login anchor and its label.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+	--primary: #0984e3;
+	--accent: #00b894;
+}
+
+#login {
+	text-align: center;
+}
+
+#login h3 {
+  color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#login > a {
+	/* Alignment */
+	display: inline-block;
+
+	/* Styling */
+	text-decoration: none;
+
+	outline: none;
+	transition-duration: .3s;
+
+	width: 300px;
+	padding: 10px;
+
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+
+	border: 2px solid var(--primary);
+	border-radius: 35px
+}
+
+#login > a:hover {
+	width: 340px;
+	background-color: var(--primary);
+}
+
+#login > a:active {
+	width: 340px;
+	background-color: var(--accent);
+	border-color: var(--accent);
+}
+
