@@ -1,5 +1,6 @@
 var storedTracks = []
 var currentSong = {}
+var playlists = {}
 
 $(document).on('ready', () => {
 	$('#loggedIn').hide()
@@ -181,6 +182,10 @@ $(document).on('ready', () => {
 	function fetchPlaylistTracks() {
 		return new Promise((resolve, reject) => {
 			const playlistValues = $('#playlist-values').val().split('\n')
+			if (playlistValues === playlists) {
+				return; // playlists did not change, don't refetch
+			}
+			playlists = playlistValues;
 			const promises = playlistValues.map((v) =>
 				getPlaylistTracks(v.split('/')[4].split('?')[0]),
 			)
