@@ -202,6 +202,7 @@ $(document).on('ready', () => {
 					resolve(null)
 				})
 				.catch((err) => {
+					console.err(err);
 					alert(
 						'Error fetching playlists. Do you have access to all of them?',
 					)
