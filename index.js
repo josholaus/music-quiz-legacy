@@ -5,7 +5,7 @@ const spotify = require('./spotify')
 
 const app = express()
 const spotifyApi = new spotify()
-const port = 80
+const port = process.env.PORT
 
 app.get('/login', (req, res) => {
 	spotifyApi.handleLogin(req, res)

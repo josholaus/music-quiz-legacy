@@ -1,7 +1,7 @@
-var storedTracks = []
-var currentSong = {}
+const storedTracks = []
+const currentSong = {}
 
-(function () {
+$(document).on('ready', () => {
 	$('#loggedIn').hide()
 	$('.media-control').hide()
 	$('.now-playing').hide()
@@ -279,4 +279,4 @@ var currentSong = {}
 			},
 		})
 	}
-})()
+});
