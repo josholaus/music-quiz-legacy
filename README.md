@@ -1,5 +1,9 @@
 # music-quiz
 
+| :zap: Repository archived  |
+|:---------------------------|
+| This repository has been archived in favor of the React/express implementation of music quiz, which can be found here: [josholaus/music.quiz](https://github.com/josholaus/music-quiz)  |
+
 Josholaus music quiz app, currently in closed access mode.
 
 **Warning:** This app is currently in closed beta mode, you have to be invited in order to use it. Otherwise you will receive an error on playback.
