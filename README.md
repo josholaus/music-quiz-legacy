@@ -2,7 +2,7 @@
 
 | :zap: Repository archived  |
 |:---------------------------|
-| This repository has been archived in favor of the React/express implementation of music quiz, which can be found here: [josholaus/music.quiz](https://github.com/josholaus/music-quiz)  |
+| This repository has been archived in favor of the React / express implementation of music quiz, which can be found here: [josholaus/music-quiz](https://github.com/josholaus/music-quiz)  |
 
 Josholaus music quiz app, currently in closed access mode.
 
